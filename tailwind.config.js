@@ -4,7 +4,16 @@ module.exports = {
     './*.php'
   ],{ dot: true }),
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'soleil': ['"Soleil"', 'sans-serif']
+      },
+      colors: {
+        'white': '#fff',
+        'black': '#000',
+        'salix': '#c2d3c0' 
+      }
+    },
   },
   plugins: [],
 }
