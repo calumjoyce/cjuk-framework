@@ -6,8 +6,16 @@
 function YD_definedBlocks() {
 	$blocks   = [];
 	$blocks[] = [
-		'name'     => 'home-landing',
-		'title'    => 'Home Landing',
+		'name'     => 'hero',
+		'title'    => 'Hero',
+		'keywords' => [],
+		'mode'     => 'edit',
+		'category' => 'intros',
+		'supports' => [ 'mode' => false, 'align' => false ]
+    ];
+	$blocks[] = [
+		'name'     => 'work-blocks',
+		'title'    => 'Work blocks',
 		'keywords' => [],
 		'mode'     => 'edit',
 		'category' => 'intros',

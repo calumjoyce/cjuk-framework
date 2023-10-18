@@ -1,6 +1,11 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="selection:bg-black selection:text-white">
 <head>
+	<title><?php the_field('seo_title'); ?></title>
+	<meta name="description" content="<?php the_field('seo_meta_description'); ?>">
+	<?php if(get_field('seo_keywords')) : ?>
+		<meta name="keywords" content="<?php the_field('seo_keywords'); ?>">
+	<?php endif; ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<?php wp_head(); ?>
@@ -36,3 +41,4 @@
 	<div id="content" class="site-content">
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main">
+				<?php the_content(); ?>

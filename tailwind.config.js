@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: require('fast-glob').sync([
-    './*.php'
+    './*.php',
+    './template-parts/blocks/*.php'
   ],{ dot: true }),
   theme: {
     extend: {

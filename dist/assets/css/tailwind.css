@@ -7,6 +7,13 @@ body, p {
     width: 100%;
     margin: 0 auto;
 }
+
+.cms-content h1,
+.h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+}
 .btn {
 
     border-radius: 0.75rem;
@@ -579,17 +586,35 @@ video {
 .top-\[-3px\] {
   top: -3px;
 }
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
+.h-\[500px\] {
+  height: 500px;
+}
 .h-auto {
   height: auto;
+}
+.h-full {
+  height: 100%;
+}
+.min-h-\[50dvh\] {
+  min-height: 50dvh;
 }
 .w-12 {
   width: 3rem;
 }
 .w-4\/12 {
   width: 33.333333%;
+}
+.w-6\/12 {
+  width: 50%;
 }
 .w-8\/12 {
   width: 66.666667%;
@@ -618,19 +643,12 @@ video {
 .border-2 {
   border-width: 2px;
 }
-.border-4 {
-  border-width: 4px;
-}
 .border-solid {
   border-style: solid;
 }
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-.border-salix {
-  --tw-border-opacity: 1;
-  border-color: rgb(194 211 192 / var(--tw-border-opacity));
 }
 .bg-black {
   --tw-bg-opacity: 1;
@@ -640,9 +658,16 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.text-left {
+  text-align: left;
 }
 .text-3xl {
   font-size: 1.875rem;
@@ -696,5 +721,11 @@ video {
 .hover\:shadow-salix:hover {
   --tw-shadow-color: #c2d3c0;
   --tw-shadow: var(--tw-shadow-colored);
+}
+@media (min-width: 1024px) {
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
