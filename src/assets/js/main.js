@@ -1,0 +1,1 @@
+document.querySelector('.page-template-default').classList.add('test');
