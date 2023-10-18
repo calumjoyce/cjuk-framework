@@ -1,14 +1,14 @@
 
-			</main><!-- #main -->
-		</div><!-- #primary -->
-	</div><!-- #content -->
+			</main>
+		</div>
+	</div>
 
-	<footer id="colophon" class="site-footer">
+	<footer id="footer" class="site-footer">
 
 		
-	</footer><!-- #colophon -->
+	</footer>
 
-</div><!-- #page -->
+</div>
 
 <?php wp_footer(); ?>
 

@@ -12,6 +12,7 @@ add_theme_support('menus');
 // Additional functions
 include get_template_directory() . '/inc/advanced-custom-fields.php';
 include get_template_directory() . '/inc/custom-blocks.php';
+include get_template_directory() . '/inc/block-functions.php';
 
 // Menus
 add_action( 'init', 'register_header_menu' );
