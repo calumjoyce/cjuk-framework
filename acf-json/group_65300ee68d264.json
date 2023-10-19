@@ -111,6 +111,66 @@
                     "media_upload": 1,
                     "delay": 0,
                     "parent_repeater": "field_65300ee6d20ef"
+                },
+                {
+                    "key": "field_65304612d0b42",
+                    "label": "Tech stack",
+                    "name": "tech_stack",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_6530464ad0b43",
+                            "label": "",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "HTML": "HTML",
+                                "CSS": "CSS",
+                                "JavaScript": "JavaScript",
+                                "PHP": "PHP",
+                                "Vue": "Vue",
+                                "Tailwind": "Tailwind",
+                                "Node": "Node",
+                                "HubSpot": "HubSpot",
+                                "WordPress": "WordPress",
+                                "Shopify": "Shopify"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "parent_repeater": "field_65304612d0b42"
+                        }
+                    ],
+                    "parent_repeater": "field_65300ee6d20ef"
                 }
             ]
         }
@@ -133,5 +193,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1697648871
+    "modified": 1697662823
 }
