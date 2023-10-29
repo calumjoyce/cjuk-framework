@@ -2,6 +2,10 @@ body, p {
     @apply font-soleil;
 }
 
+html {
+    @apply scroll-smooth
+}
+
 .module-container {
     max-width: 1580px;
     width: 100%;
@@ -13,4 +17,12 @@ body, p {
     font-size: 80px;
     font-weight: 700;
     line-height: 80px;
+}
+
+.cms-content p {
+    margin-bottom: 16px;
+}
+
+.cms-content p:nth-last-child(1) {
+    margin-bottom: 0;
 }
