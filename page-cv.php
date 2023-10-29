@@ -48,7 +48,7 @@
                     $job_summary = get_sub_field('job_summary');
                     ?>
 
-                        <div id="<?php echo str_replace(' ', '-', strtolower($company_name)); ?>" class="cv-row cms-content border-b-2 border-b-gray-200 py-10">
+                        <div id="<?php echo str_replace(' ', '-', strtolower($company_name)); ?>" class="cv-row min-h-[50vh] cms-content border-b-2 border-b-gray-200 py-10">
                             <div class="mb-2 text-left">
                                 <h3 class="text-[30px]"><?php echo $company_name; ?></h3>
                                 <p class="font-light"><?php echo $years_active; ?></p>

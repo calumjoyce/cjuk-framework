@@ -1,9 +1,9 @@
-window.addEventListener('DOMContentLoaded',  function() {
+window.addEventListener('DOMContentLoaded', function () {
     function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
         return (
-            rect.bottom = 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            rect.bottom >= -30 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 30
         );
     }
 
@@ -23,14 +23,19 @@ window.addEventListener('DOMContentLoaded',  function() {
 
     window.addEventListener('scroll', () => {
         const sections = document.querySelectorAll('.cv-row');
+        let prevSectionId = null;
+
         sections.forEach(section => {
             const sectionId = section.id;
             if (isElementInViewport(section)) {
+                if (prevSectionId && prevSectionId !== sectionId) {
+                    removeClassFromMatchingElements(prevSectionId);
+                }
                 addClassToMatchingElements(sectionId);
+                prevSectionId = sectionId;
             } else {
                 removeClassFromMatchingElements(sectionId);
             }
         });
     });
-
 });
