@@ -2,7 +2,9 @@
 module.exports = {
   content: require('fast-glob').sync([
     './*.php',
-    './template-parts/blocks/*.php'
+    './template-parts/blocks/*.php',
+    './inc/*.php',
+    './src/assets/js/*.js'
   ],{ dot: true }),
   theme: {
     extend: {
