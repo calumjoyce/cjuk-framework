@@ -1,5 +1,5 @@
 body, p {
-    @apply font-soleil;
+    @apply font-soleil font-light text-[#4b4b4b];
 }
 
 html {
@@ -25,4 +25,8 @@ html {
 
 .cms-content p:nth-last-child(1) {
     margin-bottom: 0;
+}
+
+p a {
+    @apply text-black;
 }

@@ -3,6 +3,23 @@
     "title": "Site settings",
     "fields": [
         {
+            "key": "field_653e24777c04a",
+            "label": "Global",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_652ef1ec62252",
             "label": "Phone",
             "name": "phone",
@@ -42,10 +59,11 @@
             "append": ""
         },
         {
-            "label": "New field",
-            "name": "new_field",
+            "key": "field_653e248f7c04c",
+            "label": "LinkedIn",
+            "name": "linkedin",
             "aria-label": "",
-            "type": "text",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -55,9 +73,44 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "placeholder": ""
+        },
+        {
+            "key": "field_653e24837c04b",
+            "label": "Footer",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 1
+        },
+        {
+            "key": "field_653e279227392",
+            "label": "Built with",
+            "name": "built_with",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -78,5 +131,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1697575625
+    "modified": 1698572187
 }
